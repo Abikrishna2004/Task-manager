@@ -14,8 +14,8 @@ The fastest way to deploy Planify is via Docker Compose.
 docker-compose up --build
 ```
 
-- **Frontend**: [http://localhost:5173](http://localhost:5173)
-- **API Documentation**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Frontend (Live)**: [https://plantofly.web.app](https://plantofly.web.app)
+- **Frontend (Local)**: [http://localhost:5173](http://localhost:5173)
 
 ---
 

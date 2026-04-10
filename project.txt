@@ -101,6 +101,9 @@ VIA MANUAL IGNITION:
 - Backend: `pip install -r requirements.txt && python main.py`
 - Frontend: `npm install && npm run dev`
 
+OFFICIAL LIVE DEPLOYMENTS:
+- Live Dashboard (Firebase): https://plantofly.web.app
+
 ================================================================================
 END OF INTELLIGENCE BRIEFING
 ================================================================================
