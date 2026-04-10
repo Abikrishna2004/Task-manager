@@ -3,6 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List
 
+import os
+import sys
+
+# Ensure the backend directory is in the path for Vercel
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import crud, models, schemas
 from database import engine, get_db
 
