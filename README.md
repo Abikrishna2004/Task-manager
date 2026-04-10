@@ -2,7 +2,7 @@
 
 Planify is a high-end, futuristic Task Management application designed with a **Mission Control** aesthetic. Leverage **Glassmorphism**, **Strategic Analytics**, and **Intelligence Logging** to manage your objectives with precision.
 
-![Planify Preview](https://via.placeholder.com/800x400.png?text=Planify+Strategic+Mission+Control)
+![Planify Preview](https://plantofly.web.app/)
 
 ---
 
