@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import logo from './assets/compile.journey.jpg';
 
-const API_URL = 'http://localhost:8000/tasks';
+const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+  ? 'http://localhost:8000/tasks' 
+  : 'https://task-manager-phi-flame-93.vercel.app/tasks';
 
 function App() {
   const [tasks, setTasks] = useState([]);
