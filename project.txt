@@ -1,0 +1,106 @@
+================================================================================
+🪐 PLANIFY - STRATEGIC MISSION CONTROL: COMPREHENSIVE PROJECT DOCUMENTATION
+================================================================================
+
+1. PROJECT MISSION STATEMENT
+--------------------------------------------------------------------------------
+Planify is a premier "Mission Control" ecosystem designed for high-stakes task 
+management. It combines a futuristic Glassmorphism aesthetic with a robust 
+FastAPI/React architecture to provide a seamless, secure, and visually 
+stunning strategic planning experience.
+
+2. CORE FUNCTIONALITIES & USER EXPERIENCE
+--------------------------------------------------------------------------------
+- Mission Deployment: Create tasks with titles, detailed strategic notes, 
+  and neon-coded priority levels (Critical, Medium, Low).
+- Real-time Analytics Dashboard: Instant feedback on mission counts (Total, 
+  Active, Concluded, Critical).
+- Intelligence Logs (Mission Debrief): Dynamic completion notes that sync 
+  instantly to the backend as the user records their victory.
+- Strategic Sorting: Global filters to toggle between operational phases 
+  (Active missions vs. Concluded intel).
+- Terminus Protocol: Simple, fast deletion for neutralized objectives.
+- Glassmorphism Design: Custom UI system featuring backdrop blurs, 
+  radial gradients, and fluid micro-animations.
+
+3. TECHNOLOGY STACK (THE "INTELLIGENCE CORE")
+--------------------------------------------------------------------------------
+FRONTEND CORE:
+- React 19: Component-based UI logic and state management.
+- Vite: High-speed bundling and development orchestration.
+- Vanilla CSS: A custom design system built from the ground up (no generic UI kits).
+- Google Fonts: "Outfit" typography for a premium, aerospace feel.
+
+BACKEND CORE:
+- FastAPI (Python): High-performance asynchronous REST API.
+- SQLAlchemy: Object-Relational Mapping for database communication.
+- Pydantic: Strict data validation and serialization.
+- Uvicorn: The lightning-fast ASGI server deployment.
+
+PERSISTENCE & DEPLOYMENT:
+- SQLite: Relational database engine for local persistence.
+- Docker & Docker Compose: Full service orchestration and containerization.
+
+4. DIRECTORY & FILE ARCHITECTURE
+--------------------------------------------------------------------------------
+PLANIFY-CORE/
+├── backend/                    # The Logic Engine
+│   ├── main.py                # Primary API entry point and CORS config
+│   ├── models.py              # Definitive DB structure (SQLAlchemy)
+│   ├── schemas.py             # Communication contracts (Pydantic)
+│   ├── crud.py                # Database interaction logic
+│   └── database.py            # SQLite engine configuration
+├── frontend/                   # The Intelligence Dashboard
+│   ├── src/
+│   │   ├── App.jsx            # Master controller & UI logic
+│   │   ├── index.css          # The Glassmorphism design system
+│   │   ├── main.jsx           # React initialization portal
+│   │   └── assets/            # Mission branding materials
+│   └── index.html             # The HTML5 foundation & Font integration
+├── README.md                   # Operation startup Guide
+├── project.txt                # (This File) Master Project Documentation
+└── docker-compose.yml          # Global Orchestration Protocol
+
+5. LOGIC FLOW: A MISSION'S LIFECYCLE
+--------------------------------------------------------------------------------
+1. CONFIGURATION: The system initializes the SQLite database (tasks.db) and 
+   sets up the RESTful endpoints.
+2. DEPLOYMENT (POST): The user enters mission intel in the "Plan your next move" 
+   panel. The frontend validates the input and sends a JSON payload to the 
+   FastAPI `/tasks` endpoint.
+3. PERSISTENCE: The backend receives the payload, validates it via Pydantic 
+   schemas, and saves the mission to SQLite using SQLAlchemy.
+4. ANALYTICS: The dashboard's stats bar updates instantly to reflect the new 
+   mission count and priority density.
+5. TRANSITION (PATCH): When a mission is marked as Concluded, its status 
+   field is updated in the DB via an airborne PATCH request.
+6. DEBRIEF: The completion note input appears. Every note recorded is synced 
+   back to the backend on "Blur" or "Enter", ensuring no data is lost during 
+   the debriefing process.
+7. NEUTRALIZATION (DELETE): A DELETE request is sent to the terminus endpoint, 
+   removing the mission from the operational grid forever.
+
+6. DESIGN SPECIFICATIONS (STYLE SYSTEM)
+--------------------------------------------------------------------------------
+- Background: Dark Navy (#0f172a) with Neon Purple/Pink radial gradients.
+- Cards: Semi-transparent Slate cards (#1e293b with 70% opacity) with 12px 
+  backdrop blur.
+- Borders: 1px thin glass borders (White @ 10% opacity).
+- Priority Colors:
+  - Critical (High): #f43f5e (Neon Rose)
+  - Standard (Medium): #f59e0b (Amber)
+  - Low (Routine): #10b981 (Emerald)
+- Typography: Outfit (Primary) and Inter (Secondary) for maximum readability.
+
+7. DEPLOYMENT INSTRUCTIONS
+--------------------------------------------------------------------------------
+VIA DOCKER (Recommended):
+Run `docker-compose up --build` from the root directory.
+
+VIA MANUAL IGNITION:
+- Backend: `pip install -r requirements.txt && python main.py`
+- Frontend: `npm install && npm run dev`
+
+================================================================================
+END OF INTELLIGENCE BRIEFING
+================================================================================
