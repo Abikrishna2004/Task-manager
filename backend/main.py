@@ -19,6 +19,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"status": "online", "message": "Planify Intelligence Core Operational"}
+
 @app.get("/tasks", response_model=List[schemas.Task])
 def read_tasks(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     tasks = crud.get_tasks(db, skip=skip, limit=limit)
